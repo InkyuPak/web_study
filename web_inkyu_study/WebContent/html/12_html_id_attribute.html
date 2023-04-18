@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Id Attribute</title>
+	<style>
+		#header_style{
+			color:tomato;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="header_style">Id Attribute</h1>
+	<ol>
+		<li>JAVA</li>
+		<li id="header_style">JAVA</li>
+		<li>HTML</li>
+		<li id="header_style">HTML</li>
+	</ol>
+	<hr>
+	<h1 id="h1">Hello World</h1>
+	<h1 id="h1">Hello World222222222</h1>
+	<button onclick="change()">문자 체인지</button>
+	
+	<script>
+		function change(){
+			document.getElementById("h1").innerHTML="Good!!" 
+			//id는 script랑 연동을 하고 중복되어있을때 맨위에있는 하나만 인식하고
+			//class는 전체 다 바꾼다 
+		}
+	</script>
+</body>
+</html>

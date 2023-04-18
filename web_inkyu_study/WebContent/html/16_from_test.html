@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form-Text</title>
+</head>
+<body>
+	<h1>주소입력</h1>
+	<form name="form1" action="address.jsp" method="get">
+		<ul>
+			<li>
+				<label>성명</label>
+				<input typle="text" name="name"> <!-- name까지 작성해줘야 key value형태로 넘어간다 꼭 기억! -->
+			</li>
+			
+			<li>
+				<label>연락처</label>
+				<input typle="text" name="phone">	
+			</li>
+			
+			<li>
+				<label>주소</label>
+				<input typle="text" name="addr">	
+			</li>
+			
+			<li>
+			<!-- 	<input type="button" value="주소전송"> -->
+				<button>주소 전송</button>	<!-- 이게 더 가독성이 좋다 위에거는 옛날방식 -->
+			</li>
+		</ul>
+	</form>
+</body>
+</html>
